@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGem } from '@fortawesome/free-solid-svg-icons';
 
+const links = ['intro', 'work', 'about', 'contact'];
+
 const Header = ({ onNavClick, hidden }) => {
   return (
     <header id="header" className={classNames({ hidden })}>
@@ -23,28 +25,15 @@ const Header = ({ onNavClick, hidden }) => {
           </p>
         </div>
       </div>
-      <nav className="use-middle">
+      <nav className={classNames({ 'use-middle': links.length % 2 === 0 })}>
         <ul>
-          <li>
-            <button type="button" onClick={() => onNavClick('intro')}>
-              Intro
-            </button>
-          </li>
-          <li>
-            <button type="button" onClick={() => onNavClick('work')}>
-              Work
-            </button>
-          </li>
-          <li className="is-middle">
-            <button type="button" onClick={() => onNavClick('about')}>
-              About
-            </button>
-          </li>
-          <li>
-            <button type="button" onClick={() => onNavClick('contact')}>
-              Contact
-            </button>
-          </li>
+          {links.map((x, i) => (
+            <li key={x} className={classNames({ 'is-middle': i > 0 && i % 2 === 0 })}>
+              <button type="button" onClick={() => onNavClick(x)}>
+                {x}
+              </button>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
