@@ -13,7 +13,7 @@ import '../public/css/main.css';
 
 config.autoAddCss = false;
 
-const delay = 325;
+const delay = 0;
 
 const Index = () => {
   const [preloaded, setPreloaded] = useState(false);

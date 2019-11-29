@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGem } from '@fortawesome/free-solid-svg-icons';
 
-const links = ['intro', 'work', 'about', 'contact'];
+const links = ['info', 'work', 'about', 'contact', 'elements'];
 
 const Header = ({ onNavClick, hidden }) => {
   return (
