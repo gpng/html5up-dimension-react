@@ -1,6 +1,6 @@
-# React port of HTML5UP Dimension template using NextJS
+# React Dimension
 
-> Ported from [Dimension](https://html5up.net/dimension)
+> React port of [HTML5UP Dimension](https://html5up.net/dimension) template using NextJS
 
 ## Table of Contents
 
