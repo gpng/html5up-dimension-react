@@ -80,8 +80,8 @@ const Articles = ({ displayId, onClose, active }) => {
         </>
       </Article>
       <Article
-        active={active && displayId === 'about'}
-        hidden={displayId !== 'about'}
+        active={active && displayId === 'contact'}
+        hidden={displayId !== 'contact'}
         onClose={onClose}
       >
         <>
