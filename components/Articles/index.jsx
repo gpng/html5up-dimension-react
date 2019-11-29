@@ -8,11 +8,7 @@ import Article from './Article';
 const Articles = ({ displayId, onClose, active }) => {
   return (
     <div id="main">
-      <Article
-        active={active && displayId === 'intro'}
-        hidden={displayId !== 'intro'}
-        onClose={onClose}
-      >
+      <Article id="intro" active={active} displayId={displayId} onClose={onClose}>
         <>
           <h2 className="major">Intro</h2>
           <span className="image main">
@@ -36,11 +32,7 @@ const Articles = ({ displayId, onClose, active }) => {
           </p>
         </>
       </Article>
-      <Article
-        active={active && displayId === 'work'}
-        hidden={displayId !== 'work'}
-        onClose={onClose}
-      >
+      <Article id="work" active={active} displayId={displayId} onClose={onClose}>
         <>
           <h2 className="major">Work</h2>
           <span className="image main">
@@ -60,11 +52,7 @@ const Articles = ({ displayId, onClose, active }) => {
           </p>
         </>
       </Article>
-      <Article
-        active={active && displayId === 'about'}
-        hidden={displayId !== 'about'}
-        onClose={onClose}
-      >
+      <Article id="about" active={active} displayId={displayId} onClose={onClose}>
         <>
           <h2 className="major">About</h2>
           <span className="image main">
@@ -79,11 +67,7 @@ const Articles = ({ displayId, onClose, active }) => {
           </p>
         </>
       </Article>
-      <Article
-        active={active && displayId === 'contact'}
-        hidden={displayId !== 'contact'}
-        onClose={onClose}
-      >
+      <Article id="contact" active={active} displayId={displayId} onClose={onClose}>
         <>
           <h2 className="major">Contact</h2>
           <form method="post" action="#">
