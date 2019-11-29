@@ -1,8 +1,6 @@
-# NextJS with ESLint and Prettier Boilerplate
+# React port of HTML5UP Dimension template using NextJS
 
-> NextJS app with ESLint and prettier config setup
-
-Done to make my life easier when starting NextJS apps.
+> Ported from [Dimension](https://html5up.net/dimension)
 
 ## Table of Contents
 
@@ -16,12 +14,6 @@ Done to make my life easier when starting NextJS apps.
 1. Clone this repo
 
 2. Review outdated dependancies and upgrade if needed
-
-for eslint
-
-```
-npx install-peerdeps --dev eslint-config-airbnb
-```
 
 ```
 yarn outdated
@@ -49,4 +41,4 @@ PRs accepted.
 
 ## License
 
-MIT © 2018 Gerald Png
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
