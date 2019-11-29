@@ -4,10 +4,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const Articles = ({ displayId, onClose }) => {
+const Articles = ({ displayId, onClose, active }) => {
   return (
     <div id="main">
-      <article id="intro" className={classNames({ hidden: displayId !== 'intro' })}>
+      <article
+        id="intro"
+        className={classNames({
+          active: active && displayId === 'intro',
+          hidden: displayId !== 'intro',
+        })}
+      >
         <button type="button" className="close" onClick={onClose}>
           Close
         </button>
@@ -32,7 +38,13 @@ const Articles = ({ displayId, onClose }) => {
           maximus risus, vel sed vehicula.
         </p>
       </article>
-      <article id="work" className={classNames({ hidden: displayId !== 'work' })}>
+      <article
+        id="work"
+        className={classNames({
+          active: active && displayId === 'work',
+          hidden: displayId !== 'work',
+        })}
+      >
         <button type="button" className="close" onClick={onClose}>
           Close
         </button>
@@ -53,7 +65,13 @@ const Articles = ({ displayId, onClose }) => {
           sed nunc rhoncus amet feugiat tempus.
         </p>
       </article>
-      <article id="about" className={classNames({ hidden: displayId !== 'about' })}>
+      <article
+        id="about"
+        className={classNames({
+          active: active && displayId === 'about',
+          hidden: displayId !== 'about',
+        })}
+      >
         <button type="button" className="close" onClick={onClose}>
           Close
         </button>
@@ -69,7 +87,13 @@ const Articles = ({ displayId, onClose }) => {
           sit amet ex mollis mattis lorem ipsum dolor sit amet.
         </p>
       </article>
-      <article id="contact" className={classNames({ hidden: displayId !== 'contact' })}>
+      <article
+        id="contact"
+        className={classNames({
+          active: active && displayId === 'contact',
+          hidden: displayId !== 'contact',
+        })}
+      >
         <button type="button" className="close" onClick={onClose}>
           Close
         </button>
@@ -127,11 +151,13 @@ const Articles = ({ displayId, onClose }) => {
 
 Articles.defaultProps = {
   displayId: null,
+  active: false,
 };
 
 Articles.propTypes = {
   displayId: PropTypes.string,
   onClose: PropTypes.func.isRequired,
+  active: PropTypes.bool,
 };
 
 export default Articles;

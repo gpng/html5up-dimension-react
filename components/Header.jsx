@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGem } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ onNavClick }) => {
+const Header = ({ onNavClick, hidden }) => {
   return (
-    <header id="header">
+    <header id="header" className={classNames({ hidden })}>
       <div className="logo">
         <span className="icon">
           <FontAwesomeIcon icon={faGem} />
@@ -22,7 +23,7 @@ const Header = ({ onNavClick }) => {
           </p>
         </div>
       </div>
-      <nav>
+      <nav className="use-middle">
         <ul>
           <li>
             <button type="button" onClick={() => onNavClick('intro')}>
@@ -34,7 +35,7 @@ const Header = ({ onNavClick }) => {
               Work
             </button>
           </li>
-          <li>
+          <li className="is-middle">
             <button type="button" onClick={() => onNavClick('about')}>
               About
             </button>
@@ -50,8 +51,13 @@ const Header = ({ onNavClick }) => {
   );
 };
 
+Header.defaultProps = {
+  hidden: false,
+};
+
 Header.propTypes = {
   onNavClick: PropTypes.func.isRequired,
+  hidden: PropTypes.bool,
 };
 
 export default Header;
