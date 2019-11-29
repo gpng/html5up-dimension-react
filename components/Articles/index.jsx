@@ -9,116 +9,108 @@ const Articles = ({ displayId, onClose, active }) => {
   return (
     <div id="main">
       <Article id="info" active={active} displayId={displayId} onClose={onClose}>
-        <>
-          <h2 className="major">Info</h2>
-          <p>
-            Our wedding service at{' '}
-            <a
-              href="https://www.google.com/maps/place/St+Andrews+Street+Baptist+Church/@52.2025988,0.1238654,15z/data=!4m2!3m1!1s0x0:0x30543064effa33a9?sa=X&ved=2ahUKEwifyYPIqNzhAhUFheAKHW_aBT4Q_BIwDXoECAgQCA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              St Andrew&apos;s Street Baptist Church
-            </a>{' '}
-            (CB2 3AR) starts at 2:30pm. There will be a bus to transport you from the church to the
-            reception - with dinner, speeches and dancing until midnight.
-          </p>
-          <h3 className="major">Travel</h3>
-          <p>
-            St Andrew&apos;s Street Baptist Church is a flintstone building on St Andrew&apos;s
-            Street, almost opposite the University Arms Hotel and next to the Regal pub (see below).
-            It is a 20 minute walk or short taxi ride from Cambridge station. If you would like to
-            drive there are two nearby multi-storey car parks - Queen Anne Terrace or in the Grand
-            Arcade shopping centre. The centre of Cambridge has some tricky one way systems and is
-            very busy on Saturday afternoons, so please leave plenty of time!
-          </p>
-        </>
+        <h2 className="major">Info</h2>
+        <p>
+          Our wedding service at{' '}
+          <a
+            href="https://www.google.com/maps/place/St+Andrews+Street+Baptist+Church/@52.2025988,0.1238654,15z/data=!4m2!3m1!1s0x0:0x30543064effa33a9?sa=X&ved=2ahUKEwifyYPIqNzhAhUFheAKHW_aBT4Q_BIwDXoECAgQCA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            St Andrew&apos;s Street Baptist Church
+          </a>{' '}
+          (CB2 3AR) starts at 2:30pm. There will be a bus to transport you from the church to the
+          reception - with dinner, speeches and dancing until midnight.
+        </p>
+        <h3 className="major">Travel</h3>
+        <p>
+          St Andrew&apos;s Street Baptist Church is a flintstone building on St Andrew&apos;s
+          Street, almost opposite the University Arms Hotel and next to the Regal pub (see below).
+          It is a 20 minute walk or short taxi ride from Cambridge station. If you would like to
+          drive there are two nearby multi-storey car parks - Queen Anne Terrace or in the Grand
+          Arcade shopping centre. The centre of Cambridge has some tricky one way systems and is
+          very busy on Saturday afternoons, so please leave plenty of time!
+        </p>
       </Article>
       <Article id="work" active={active} displayId={displayId} onClose={onClose}>
-        <>
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src="/static/images/pic02.jpg" alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien
-            imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet
-            magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula
-            tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et
-            orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna
-            magna sed nunc rhoncus amet feugiat tempus.
-          </p>
-        </>
+        <h2 className="major">Work</h2>
+        <span className="image main">
+          <img src="/static/images/pic02.jpg" alt="" />
+        </span>
+        <p>
+          Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien
+          imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
+          lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+        </p>
+        <p>
+          Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet
+          magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula
+          tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et
+          orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna
+          sed nunc rhoncus amet feugiat tempus.
+        </p>
       </Article>
       <Article id="about" active={active} displayId={displayId} onClose={onClose}>
-        <>
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src="/static/images/pic03.jpg" alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim
-            arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi,
-            fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus
-            ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras
-            viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.
-          </p>
-        </>
+        <h2 className="major">About</h2>
+        <span className="image main">
+          <img src="/static/images/pic03.jpg" alt="" />
+        </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim
+          arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila
+          lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
+          Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula
+          sit amet ex mollis mattis lorem ipsum dolor sit amet.
+        </p>
       </Article>
       <Article id="contact" active={active} displayId={displayId} onClose={onClose}>
-        <>
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="fields">
-              <div className="field half">
-                <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="4" />
-              </div>
+        <h2 className="major">Contact</h2>
+        <form method="post" action="#">
+          <div className="fields">
+            <div className="field half">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name" />
             </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="primary" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
+            <div className="field half">
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div className="field">
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" rows="4" />
+            </div>
+          </div>
+          <ul className="actions">
             <li>
-              <a href="#" className="icon brands fa-twitter">
-                <span className="label">Twitter</span>
-              </a>
+              <input type="submit" value="Send Message" className="primary" />
             </li>
             <li>
-              <a href="#" className="icon brands fa-facebook-f">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands fa-github">
-                <span className="label">GitHub</span>
-              </a>
+              <input type="reset" value="Reset" />
             </li>
           </ul>
-        </>
+        </form>
+        <ul className="icons">
+          <li>
+            <a href="#" className="icon brands fa-twitter">
+              <span className="label">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" className="icon brands fa-facebook-f">
+              <span className="label">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" className="icon brands fa-instagram">
+              <span className="label">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" className="icon brands fa-github">
+              <span className="label">GitHub</span>
+            </a>
+          </li>
+        </ul>
       </Article>
       <Article id="elements" active={active} displayId={displayId} onClose={onClose}>
         <h2 className="major">Elements</h2>
