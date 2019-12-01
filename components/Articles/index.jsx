@@ -2,6 +2,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 // components
 import Article from './Article';
 
@@ -412,25 +414,47 @@ print 'It took ' + i + ' iterations to sort the deck.';`}</code>
                   checked
                   onChange={() => {}}
                 />
-                <label htmlFor="demo-priority-low">Low</label>
+                <label htmlFor="demo-priority-low">
+                  <span className="circle">
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </span>
+                  </span>
+                  <span>Low</span>
+                </label>
               </div>
               <div className="field half">
                 <input type="radio" id="demo-priority-high" name="demo-priority" />
-                <label htmlFor="demo-priority-high">High</label>
+                <label htmlFor="demo-priority-high">
+                  <span className="circle">
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </span>
+                  </span>
+                  <span>High</span>
+                </label>
               </div>
               <div className="field half">
                 <input type="checkbox" id="demo-copy" name="demo-copy" />
-                <label htmlFor="demo-copy">Email me a copy</label>
+                <label htmlFor="demo-copy">
+                  <span className="circle">
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </span>
+                  </span>
+                  <span>Email me a copy</span>
+                </label>
               </div>
               <div className="field half">
-                <input
-                  type="checkbox"
-                  id="demo-human"
-                  name="demo-human"
-                  checked
-                  onChange={() => {}}
-                />
-                <label htmlFor="demo-human">Not a robot</label>
+                <input type="checkbox" id="demo-human" name="demo-human" />
+                <label htmlFor="demo-human">
+                  <span className="circle">
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </span>
+                  </span>
+                  <span>Not a robot</span>
+                </label>
               </div>
               <div className="field">
                 <label htmlFor="demo-message">Message</label>
