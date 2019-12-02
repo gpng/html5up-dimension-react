@@ -31,6 +31,24 @@ yarn
 yarn dev
 ```
 
+## Deploy (with Zeit's Now)
+
+1. Install now-cli
+
+```
+yarn global add now
+```
+
+2. Create a free account with [Zeit](https://zeit.co)
+
+3. Set name parameter in `now.json` to your desired \*.now.sh url
+
+4. Deploy
+
+```
+now
+```
+
 ## Maintainers
 
 [@gpng](https://github.com/gpng)
