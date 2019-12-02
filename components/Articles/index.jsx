@@ -10,28 +10,26 @@ import Article from './Article';
 const Articles = ({ displayId, onClose, active }) => {
   return (
     <div id="main">
-      <Article id="info" active={active} displayId={displayId} onClose={onClose}>
-        <h2 className="major">Info</h2>
+      <Article id="intro" active={active} displayId={displayId} onClose={onClose}>
+        <h2 className="major">Intro</h2>
+        <span className="image main">
+          <img src="/static/images/pic01.jpg" alt="" />
+        </span>
         <p>
-          Our wedding service at{' '}
-          <a
-            href="https://www.google.com/maps/place/St+Andrews+Street+Baptist+Church/@52.2025988,0.1238654,15z/data=!4m2!3m1!1s0x0:0x30543064effa33a9?sa=X&ved=2ahUKEwifyYPIqNzhAhUFheAKHW_aBT4Q_BIwDXoECAgQCA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            St Andrew&apos;s Street Baptist Church
-          </a>{' '}
-          (CB2 3AR) starts at 2:30pm. There will be a bus to transport you from the church to the
-          reception - with dinner, speeches and dancing until midnight.
+          Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante
+          interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet
+          egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By
+          the way, check out my <a href="#work">awesome work</a>.
         </p>
-        <h3 className="major">Travel</h3>
         <p>
-          St Andrew&apos;s Street Baptist Church is a flintstone building on St Andrew&apos;s
-          Street, almost opposite the University Arms Hotel and next to the Regal pub (see below).
-          It is a 20 minute walk or short taxi ride from Cambridge station. If you would like to
-          drive there are two nearby multi-storey car parks - Queen Anne Terrace or in the Grand
-          Arcade shopping centre. The centre of Cambridge has some tricky one way systems and is
-          very busy on Saturday afternoons, so please leave plenty of time!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id
+          vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit
+          sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at,
+          euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam
+          maximus risus, vel sed vehicula.
         </p>
       </Article>
       <Article id="work" active={active} displayId={displayId} onClose={onClose}>
